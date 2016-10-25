@@ -1,0 +1,156 @@
+@CHARSET "utf-8";
+
+/* body .hidden{
+	display: none;
+}
+ */
+body .clearfix {
+  overflow: auto;
+  zoom: 1;
+}
+/*---------------------------<level 1>--------------------------------------  */
+#header{
+	height:70px;
+}
+
+#main-menu{
+	display:inline-block;
+	font-family:"맑은고딕";
+	font-weight:bold;
+	font-size:15px;
+	color:black;
+}
+
+/* #main-menu > h1{
+	display : hidden;
+}
+ */
+#main-menu > ul{
+	border:1px solid red;
+	overflow:auto; 
+}
+
+#main-menu > ul > li{
+	float:left;
+	padding-left:24px; 
+	background:url("../images/bg-main-menu-vsp.png") no-repeat 13px center;
+ㅌ
+}
+
+
+/* #main-menu > h1{
+	visibility: hidden;
+	display: none;
+} */
+
+
+#visual{
+	background: #313131 url("../images/bg-visual.png") no-repeat center; /* rgb(100%,0%,30%); *//*rgba(255,0,0,0.2)*/;/*#2000ff00*/;
+	background-size:3000px 171px;
+	height:171px;
+	border-top:3px solid #8CDA34;
+}
+
+#body{
+	
+	min-height:300px;
+	border-top:5px solid #8CDA34
+	margin-top:1px;
+}
+
+#footer{
+	background: #313131;
+	height:100px;
+}
+
+/*---------------------------<level 2>--------------------------------------  */
+/* #header > div,
+#visual > div,
+#body > div,
+#footer > div{
+	
+} */
+
+/* 구조변경에 용이한 선택자  */
+.content-container{
+	
+	height:inherit;/* 10px; */
+	width:960px;
+	margin:auto;
+	/* margin-left:auto;
+	margin-left:auto; */
+	
+}
+
+/*---------------------------<level 3>--------------------------------------  */
+#aside{
+	min-heigt:inherit;
+	width:205px;
+	background:  url("../images/bg-aside-title.png") no-repeat left top;
+	 float:left; 
+}
+
+main{
+	min-heigt:inherit;
+	width:calc(100% - 205px);/* 755px; */
+	
+	float:left;    
+}
+
+#body > .content-container{
+	background:  url("../images/bg-body.png") repeat-y ;
+	
+	position: relative;
+}
+/* 레이아웃기법
+1.블록을 이용한 레이아웃 
+2.상대
+3.절대
+--------------
+4.플렉스
+5.그리드 */
+ 
+
+/* #sang{
+	
+	position: relative; 	
+	left:100px;
+	top:50px;
+	opacity:0.7;
+	width:600px;
+	height:100px;
+	
+	
+} */
+
+/* #breadLet{
+	position: absolute; 
+	left:150px;
+	top:20px;
+	width:200px;
+	
+} */
+
+/* #form{
+	position: relative; 
+	left:520px;
+	top:0px;
+	width:200px;
+	
+} */
+
+/* #test{
+	width:250px;
+	height:150px;
+	overflow:scroll;
+	border:3px solid red;
+	background: url("../images/logo.png") no-repeat left top;
+	background-size: cover;
+	background-attachment: scroll;
+}
+ */
+ 
+
+ 
+
+
